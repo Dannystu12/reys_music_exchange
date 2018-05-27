@@ -21,4 +21,9 @@ public class DrumKitTest {
     public void hasType(){
         assertEquals(InstrumentType.PERCUSSION, drumKit.getType());
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("Plink plonk the drum kit is playing", drumKit.play());
+    }
 }

@@ -6,5 +6,7 @@ public enum Manufacturer {
     IBANEZ,
     DUNLOP,
     YAMAHA,
-    ROLAND
+    ROLAND,
+    DEAN,
+    EPIPHONE
 }

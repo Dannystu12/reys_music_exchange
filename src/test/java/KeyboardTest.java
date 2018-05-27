@@ -22,4 +22,9 @@ public class KeyboardTest {
     public void hasType(){
         assertEquals(InstrumentType.KEYBOARD, keyboard.getType());
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("Plink plonk the keyboard is playing", keyboard.play());
+    }
 }

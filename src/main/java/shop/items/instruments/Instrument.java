@@ -3,9 +3,10 @@ package shop.items.instruments;
 import shop.enums.Colour;
 import shop.enums.InstrumentType;
 import shop.enums.Manufacturer;
+import shop.interfaces.IPlay;
 import shop.items.Item;
 
-public abstract class Instrument extends Item {
+public abstract class Instrument extends Item implements IPlay {
 
     private InstrumentType type;
     private Colour colour;
