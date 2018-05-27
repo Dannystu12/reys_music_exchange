@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 import shop.enums.AccessoryType;
+import shop.enums.Manufacturer;
 import shop.items.Accessory;
 
 import static org.junit.Assert.assertEquals;
@@ -11,14 +12,10 @@ public class AccessoryTest {
 
     @Before
     public void setup(){
-        accessory = new Accessory("Dunlop 418P .88 Tortex Green Standard", AccessoryType.PICK,
+        accessory = new Accessory("Dunlop 418P .88 Tortex Green Standard", Manufacturer.DUNLOP, AccessoryType.PICK,
                 0.4, 0.8);
     }
 
-    @Test
-    public void hasName(){
-        assertEquals("Dunlop 418P .88 Tortex Green Standard", accessory.getName());
-    }
 
     @Test
     public void hasType(){

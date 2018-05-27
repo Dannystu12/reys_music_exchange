@@ -1,20 +1,15 @@
 package shop.items;
 
 import shop.enums.AccessoryType;
+import shop.enums.Manufacturer;
 
 public class Accessory extends Item{
 
-    private String name;
     private AccessoryType type;
 
-    public Accessory(String name, AccessoryType type, double buyPrice, double sellPrice){
-        super(buyPrice, sellPrice);
-        this.name = name;
+    public Accessory(String model, Manufacturer manufacturer, AccessoryType type, double buyPrice, double sellPrice){
+        super(model, manufacturer, buyPrice, sellPrice);
         this.type = type;
-    }
-
-    public String getName() {
-        return name;
     }
 
 
