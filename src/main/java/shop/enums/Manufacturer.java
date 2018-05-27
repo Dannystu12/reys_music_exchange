@@ -8,5 +8,6 @@ public enum Manufacturer {
     YAMAHA,
     ROLAND,
     DEAN,
-    EPIPHONE
+    EPIPHONE,
+    SNARK
 }
